@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="hugeballs.org is a hardcore multiplayer dodge-survival browser game.">
+    <title>hugeballs.org</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="menuMode">
+    <main id="app">
+      <canvas id="game" aria-label="hugeballs.org game canvas"></canvas>
+      <div id="gameTitle" class="hidden">hugeballs.org</div>
+      <section id="menuPanel" class="panel">
+        <div class="menuPreview" aria-hidden="true">
+          <img src="img/ball_flying.svg" alt="">
+          <img src="img/ball_frozen.svg" alt="">
+          <img class="menuPlayer" src="img/player_0.svg" alt="">
+          <img src="img/ball_bouncy.svg" alt="">
+          <img src="img/ball_magnetic.svg" alt="">
+          <img src="img/ball_lightning.svg" alt="">
+        </div>
+        <div class="menuBrand">hugeballs.org</div>
+        <div class="menuRules" aria-label="How to play">
+          <div class="controlGrid">
+            <div class="controlCard">
+              <div class="singleKeyControl" aria-hidden="true">
+                <kbd class="controlKey">WASD / ARROWS</kbd>
+              </div>
+              <span>Move</span>
+            </div>
+            <div class="controlCard actionCard">
+              <div class="actionKeys" aria-hidden="true">
+                <kbd class="controlKey">SPACEBAR / CLICK</kbd>
+              </div>
+              <span>Ability</span>
+            </div>
+          </div>
+        </div>
+        <form id="joinForm">
+          <label for="nameInput">Nickname</label>
+          <input id="nameInput" maxlength="16" autocomplete="nickname" placeholder="Runner">
+          <button type="submit">Enter Lobby</button>
+        </form>
+        <div id="menuStatus"></div>
+      </section>
+      <section id="chat" class="panel hidden">
+        <div id="chatMessages"></div>
+        <form id="chatForm">
+          <input id="chatInput" maxlength="120" autocomplete="off" placeholder="Global chat">
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <section id="hud" class="panel hidden">
+        <div id="areaLine">Connecting</div>
+        <div id="statLine"></div>
+        <div id="cooldownLine"></div>
+      </section>
+      <section id="lobbyPanel" class="panel hidden">
+        <div class="panelTitle">Worlds</div>
+        <div id="worldButtons" class="buttonGrid"></div>
+        <div class="panelTitle">Character</div>
+        <div id="characterButtons" class="buttonGrid compact"></div>
+      </section>
+      <section id="deathPanel" class="panel hidden">
+        <div class="deathTitle">Game Over</div>
+        <div id="deathText"></div>
+        <button id="reconnectButton" type="button">Reconnect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

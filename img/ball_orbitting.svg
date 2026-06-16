@@ -1,0 +1,43 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="starBallBody" cx="35%" cy="28%" r="75%">
+            <stop offset="0%" stop-color="#fff3a6"/>
+            <stop offset="55%" stop-color="#f4c542"/>
+            <stop offset="100%" stop-color="#c98312"/>
+        </radialGradient>
+
+        <radialGradient id="starShapeFill" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#fff9b0"/>
+            <stop offset="55%" stop-color="#ffd93d"/>
+            <stop offset="100%" stop-color="#ffb300"/>
+        </radialGradient>
+    </defs>
+
+    <!-- Main ball body -->
+    <circle cx="64" cy="64" r="52" fill="url(#starBallBody)" stroke="#8d5c10" stroke-width="5"/>
+
+    <!-- Soft highlight -->
+    <ellipse cx="46" cy="40" rx="20" ry="12" fill="#ffffff" opacity="0.16"/>
+
+    <!-- Centered inner star -->
+    <path
+        d="M64 34
+        L72.2 51.8
+        L91.8 54.1
+        L77.3 67.4
+        L81.2 86.9
+        L64 77.2
+        L46.8 86.9
+        L50.7 67.4
+        L36.2 54.1
+        L55.8 51.8
+        Z"
+        fill="url(#starShapeFill)"
+        stroke="#9c6b12"
+        stroke-width="4"
+        stroke-linejoin="round"
+        />
+
+    <!-- Strong outer outline -->
+    <circle cx="64" cy="64" r="52" fill="none" stroke="#6f470b" stroke-width="5"/>
+</svg>
