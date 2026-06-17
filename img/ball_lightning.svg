@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="lightningBallBody" cx="42%" cy="36%" r="72%">
+            <stop offset="0%" stop-color="#f8f1ff"/>
+            <stop offset="45%" stop-color="#9e66ff"/>
+            <stop offset="100%" stop-color="#2a43d6"/>
+        </radialGradient>
+        <linearGradient id="lightningBoltFill" x1="40%" y1="16%" x2="70%" y2="92%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="48%" stop-color="#c7edff"/>
+            <stop offset="100%" stop-color="#58dfff"/>
+        </linearGradient>
+    </defs>
+
+    <circle cx="64" cy="64" r="52" fill="url(#lightningBallBody)" stroke="#1a2b8f" stroke-width="5"/>
+    <path
+        d="M72 18 L39 67 H61 L50 110 L91 55 H68 Z"
+        fill="url(#lightningBoltFill)"
+        stroke="#f8fbff"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+    <circle cx="64" cy="64" r="52" fill="none" stroke="#10195f" stroke-width="5"/>
+</svg>
